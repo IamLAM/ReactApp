@@ -26,4 +26,15 @@ return(
 
 }
 
+ReactDOM.render(printComponent(), document.getElementById('root'));
+
+//another way to create a component 
+
+class Animal extends React.Component{
+
+    constructor(props){
+        super(props);
+    }
+}
+
 
