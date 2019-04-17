@@ -12,3 +12,4 @@ const JSX=(<div>
 </ul>
 </div>);
 ReactDOM.render(JSX, document.getElementById('root'))
+//first parameters is component and second is a section of html
