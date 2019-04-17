@@ -142,7 +142,7 @@ const TypesOfFruit = () => {
     
     }
     
-    ReactDOM.render(<MyComponent/>,document.getElementById("challenge-node"));
+    ReactDOM.render(<MyComponent/>,document.getElementById("root"));
 
     //good example using props
 
@@ -175,7 +175,7 @@ const CurrentDate = (props) => {
   //passing array by props
   const List= (props) => {
     { /* change code below this line */ }
-    return <p>{}</p>
+    return <p>{props.tasks}</p>
     { /* change code above this line */ }
   };
   
@@ -189,7 +189,7 @@ const CurrentDate = (props) => {
           <h1>To Do Lists</h1>
           <h2>Today</h2>
           { /* change code below this line */ }
-          <List tasks={[""]}/>
+          <List tasks={["walk","dog","workout"]}/>
           <h2>Tomorrow</h2>
           <List/>
           { /* change code above this line */ }
@@ -197,3 +197,5 @@ const CurrentDate = (props) => {
       );
     }
   };
+
+  ReactDOM.render(<ToDo/>,document.getElementById('root'));
