@@ -264,3 +264,5 @@ const CurrentDate = (props) => {
       );
     }
   };
+
+  //concept:A stateless functional component is any function you write which accepts props and returns JSX
