@@ -94,3 +94,14 @@ const TypesOfFruit = () => {
       </div>
     );
   };
+
+
+  const Fruits = () => {
+    return (
+      <div>
+        { }
+       <TypesOfFruit></TypesOfFruit>
+        {  }
+      </div>
+    );
+  };
