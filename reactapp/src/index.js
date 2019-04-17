@@ -1,7 +1,8 @@
 /*introduction to react */
 
 import React from 'react';
-import {PropTypes} from 'react'
+import PropTypes from 'prop-types';
+
 import ReactDOM from 'react-dom';
 const JSX=(<div>
 <h1>Valid JSX</h1>
@@ -206,12 +207,15 @@ const CurrentDate = (props) => {
   //override a default props
   const Items = (props) => {
     return <h1>Current Quantity of Items in Cart: {props.quantity}</h1>
-  }
+  };
   
   Items.defaultProps = {
     quantity: 0
-  }
+  };
   
+  Items.propTypes = {
+    quantity: PropTypes.number.isRequired
+  };
   class ShoppingCart extends React.Component {
     constructor(props) {
       super(props);
@@ -222,3 +226,4 @@ const CurrentDate = (props) => {
       { /* change code above this line */ }
     }
   };
+  ReactDOM.render(<ShoppingCart/>,document.getElementById('root'));
