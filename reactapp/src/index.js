@@ -46,3 +46,35 @@ class Animal extends React.Component{
 let an=new Animal();
 
 ReactDOM.render(an.render(), document.getElementById('root'));
+
+
+//Component with composition
+const ChildComponent = () => {
+    return (
+        <div>
+          <p>I am the child</p>
+        </div>
+      );
+    };
+    
+    class ParentComponent extends React.Component {
+      constructor(props) {
+        super(props);
+      }
+      render() {
+        return (
+          <div>
+            <h1>I am the parent</h1>
+            {  }
+               <ChildComponent></ChildComponent>
+    
+            {  }
+          </div>
+        );
+      }
+    };
+
+
+    let pa=new ParentComponent();
+
+ReactDOM.render(pa.render(), document.getElementById('root'));
