@@ -78,3 +78,19 @@ const ChildComponent = () => {
     let pa=new ParentComponent();
 
 ReactDOM.render(pa.render(), document.getElementById('root'));
+
+//this is another example .. nested functions and print in the main class
+
+const TypesOfFruit = () => {
+    return (
+      <div>
+        <h2>Fruits:</h2>
+        <ul>
+          <li>Apples</li>
+          <li>Blueberries</li>
+          <li>Strawberries</li>
+          <li>Bananas</li>
+        </ul>
+      </div>
+    );
+  };
