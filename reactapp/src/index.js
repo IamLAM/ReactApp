@@ -75,9 +75,9 @@ const ChildComponent = () => {
     };
 
 
-    let pa=new ParentComponent();
+    //let pa=new ParentComponent(); or <ParentComponent/>
 
-ReactDOM.render(pa.render(), document.getElementById('root'));
+ReactDOM.render(<ParentComponent/>, document.getElementById('root'));
 
 //this is another example .. nested functions and print in the main class
 
