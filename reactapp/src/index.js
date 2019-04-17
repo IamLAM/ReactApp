@@ -17,3 +17,13 @@ ReactDOM.render(JSX, document.getElementById('root'))
 //first parameters is component and second is a section of html
 //if we need to add a class , we need to put classNames
 
+//my first component
+
+const printComponent=function(){
+return(
+    <div>hi</div>
+);
+
+}
+
+
