@@ -42,3 +42,7 @@ class Animal extends React.Component{
     }
 
 }
+
+let an=new Animal();
+
+ReactDOM.render(an.render(), document.getElementById('root'));
