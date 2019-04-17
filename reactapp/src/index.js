@@ -175,7 +175,7 @@ const CurrentDate = (props) => {
   //passing array by props
   const List= (props) => {
     { /* change code below this line */ }
-    return <p>{props.tasks}</p>
+    return <p>{props.tasks.join('| ')}</p>
     { /* change code above this line */ }
   };
   
@@ -191,7 +191,7 @@ const CurrentDate = (props) => {
           { /* change code below this line */ }
           <List tasks={["walk","dog","workout"]}/>
           <h2>Tomorrow</h2>
-          <List/>
+          <List tasks={["walk","dog","workout"]}/>
           { /* change code above this line */ }
         </div>
       );
