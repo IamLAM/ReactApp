@@ -199,3 +199,5 @@ const CurrentDate = (props) => {
   };
 
   ReactDOM.render(<ToDo/>,document.getElementById('root'));
+
+  //if you want to asign a default props ShoppingCart.defaultProps = {items: 0}
