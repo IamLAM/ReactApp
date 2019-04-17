@@ -1,6 +1,7 @@
 /*introduction to react */
 
 import React from 'react';
+import {PropTypes} from 'react'
 import ReactDOM from 'react-dom';
 const JSX=(<div>
 <h1>Valid JSX</h1>
