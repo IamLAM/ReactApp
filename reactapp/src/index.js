@@ -15,7 +15,7 @@ const JSX=(<div>
 <li>hi</li>
 </ul>
 </div>);
-ReactDOM.render(JSX, document.getElementById('root'))
+//ReactDOM.render(JSX, document.getElementById('root'))
 //first parameters is component and second is a section of html
 //if we need to add a class , we need to put classNames
 
@@ -28,7 +28,7 @@ return(
 
 }
 
-ReactDOM.render(printComponent(), document.getElementById('root'));
+//ReactDOM.render(printComponent(), document.getElementById('root'));
 
 //another way to create a component 
 
@@ -47,7 +47,7 @@ class Animal extends React.Component{
 
 let an=new Animal();
 
-ReactDOM.render(an.render(), document.getElementById('root'));
+//ReactDOM.render(an.render(), document.getElementById('root'));
 
 
 //Component with composition
@@ -79,7 +79,7 @@ const ChildComponent = () => {
 
     //let pa=new ParentComponent(); or <ParentComponent/>
 
-ReactDOM.render(<ParentComponent/>, document.getElementById('root'));
+//ReactDOM.render(<ParentComponent/>, document.getElementById('root'));
 
 //this is another example .. nested functions and print in the main class
 
@@ -144,7 +144,7 @@ const TypesOfFruit = () => {
     
     }
     
-    ReactDOM.render(<MyComponent/>,document.getElementById("root"));
+    //ReactDOM.render(<MyComponent/>,document.getElementById("root"));
 
     //good example using props
 
@@ -200,7 +200,7 @@ const CurrentDate = (props) => {
     }
   };
 
-  ReactDOM.render(<ToDo/>,document.getElementById('root'));
+  //ReactDOM.render(<ToDo/>,document.getElementById('root'));
 
   //if you want to asign a default props ShoppingCart.defaultProps = {items: 0}
 
@@ -226,7 +226,7 @@ const CurrentDate = (props) => {
       { /* change code above this line */ }
     }
   };
-  ReactDOM.render(<ShoppingCart/>,document.getElementById('root'));
+  //ReactDOM.render(<ShoppingCart/>,document.getElementById('root'));
 
 
   //sending and receiving a data with props and showing with this.
@@ -290,7 +290,7 @@ class StatefulComponent extends React.Component {
 
 //Render State in the User Interface
 
-class MyComponent extends React.Component {
+class MyComponent5 extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -310,7 +310,7 @@ class MyComponent extends React.Component {
 
 //
 
-class MyComponent extends React.Component {
+class MyComponent4 extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -333,7 +333,7 @@ class MyComponent extends React.Component {
 
 //if you need to update a state, you need to use setState
 
-class MyComponent extends React.Component {
+class MyComponent3 extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -358,7 +358,7 @@ this.setState({
   }
 };
 //Use State to Toggle an Element
-class MyComponent extends React.Component {
+class MyComponent2 extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -414,7 +414,17 @@ class Counter extends React.Component {
     // change code above this line
   }
   // change code below this line
-
+  increment(){
+    this.state.count++;
+  }
+  
+  decrement(){
+    this.state.count--;
+  }
+  
+  reset(){
+    this.state.count=0;
+  }
   // change code above this line
   render() {
     return (
@@ -427,3 +437,4 @@ class Counter extends React.Component {
     );
   }
 };
+
