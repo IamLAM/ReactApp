@@ -451,10 +451,12 @@ class ControlledInput extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      input: ''
+      input: '',
+      submit: ''
     };
     // change code below this line
       this.handleChange=this.handleChange.bind(this);
+      this.handleSubmit = this.handleSubmit.bind(this);
     // change code above this line
   }
   // change code below this line
@@ -463,15 +465,25 @@ class ControlledInput extends React.Component {
       input:event.target.value
     });
   }
+
+  handleSubmit(event) {
+    // change code below this line
+    this.setState({
+
+      submit:event.preventDefault()
+    });
+  }
   // change code above this line
   render() {
     return (
       <div>
+      <form onSubmit={this.handleSubmit}>
         { /* change code below this line */}
         <input type="text" value={this.state.input} onChange={this.handleChange}/>
         { /* change code above this line */}
         <h4>Controlled Input:</h4>
         <p>{this.state.input}</p>
+        </form>
       </div>
     );
   }
