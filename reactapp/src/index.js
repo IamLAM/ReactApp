@@ -468,7 +468,7 @@ class ControlledInput extends React.Component {
     return (
       <div>
         { /* change code below this line */}
-
+        <input type="text" value={this.state.input} onChange={this.handleChange}/>
         { /* change code above this line */}
         <h4>Controlled Input:</h4>
         <p>{this.state.input}</p>
@@ -476,3 +476,5 @@ class ControlledInput extends React.Component {
     );
   }
 };
+
+ReactDOM.render(<ControlledInput/>,document.getElementById("root"));
