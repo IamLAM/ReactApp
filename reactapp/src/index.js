@@ -415,15 +415,21 @@ class Counter extends React.Component {
   }
   // change code below this line
   increment(){
-    this.state.count++;
+    this.setState({
+      count:this.state.count+1
+      });
   }
   
   decrement(){
-    this.state.count--;
+    this.setState({
+    count:this.state.count-1
+    });
   }
   
   reset(){
-    this.state.count=0;
+    this.setState({
+      count:0
+      });
   }
   // change code above this line
   render() {
@@ -438,3 +444,4 @@ class Counter extends React.Component {
   }
 };
 
+ReactDOM.render(<Counter/>,document.getElementById("root"));
