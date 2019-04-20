@@ -483,6 +483,7 @@ class ControlledInput extends React.Component {
         { /* change code above this line */}
         <h4>Controlled Input:</h4>
         <p>{this.state.input}</p>
+        <button type='submit'>Submit!</button>
         </form>
       </div>
     );
