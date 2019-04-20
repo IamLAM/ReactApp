@@ -468,9 +468,10 @@ class ControlledInput extends React.Component {
 
   handleSubmit(event) {
     // change code below this line
+    event.preventDefault();
     this.setState({
-
-      submit:event.preventDefault()
+      input: '',
+      submit: this.state.input
     });
   }
   // change code above this line
@@ -478,6 +479,7 @@ class ControlledInput extends React.Component {
     return (
       <div>
       <form onSubmit={this.handleSubmit}>
+      <h1>{this.state.submit}</h1>
         { /* change code below this line */}
         <input type="text" value={this.state.input} onChange={this.handleChange}/>
         { /* change code above this line */}
