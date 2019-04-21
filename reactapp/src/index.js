@@ -1123,7 +1123,7 @@ class MyComponent11 extends React.Component {
   }
   render() {
     const usersOnline = this.state.users.filter(user=>user.online); 
-    const renderOnline = usersOnline.map(i=><li>{i.username}</li>); 
+    const renderOnline = usersOnline.map((i)=><li key={i.username+1}>{i.username}</li>); 
     return (
        <div>
          <h1>Current Online Users:</h1>
