@@ -1143,7 +1143,9 @@ class App extends React.Component {
     super(props);
   }
   render() {
-    return <div/>
+    return <div>
+      hi
+      </div>
   }
 };
 
