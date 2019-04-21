@@ -909,11 +909,11 @@ class MyComponent10 extends React.Component {
     });
   }
   render() {
-    // change code below this line
+   
     return (
        <div>
          <button onClick={this.toggleDisplay}>Toggle Display</button>
-         <h1>Displayed!</h1>
+         {this.state.display&&<h1>Displayed!</h1>}  
        </div>
     );
   }
