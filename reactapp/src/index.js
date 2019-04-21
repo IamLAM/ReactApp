@@ -758,7 +758,7 @@ class Controller1 extends React.Component {
 class Colorful extends React.Component {
   render() {
     return (
-      <div>Big Red</div>
+<div style={{color:"red",fontSize:"72px"}}>Big Red</div>
     );
   }
 };
