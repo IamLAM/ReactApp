@@ -524,7 +524,7 @@ class Navbar extends React.Component {
 };
 
 ///Pass a Callback as Props
-class MyApp extends React.Component {
+class MyApp2 extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -578,3 +578,20 @@ class RenderInput extends React.Component {
     );
   }
 };
+
+//using a lifecycle method componentWillMount
+class MyComponent6 extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  componentWillMount() {
+    // change code below this line
+    console.log("hi");
+    // change code above this line
+  }
+  render() {
+    return <div />
+  }
+};
+
+ReactDOM.render(<MyComponent6/>,document.getElementById("root"));
