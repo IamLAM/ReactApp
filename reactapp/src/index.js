@@ -614,7 +614,7 @@ class MyComponent7 extends React.Component {
   render() {
     return (
       <div>
-        <h1>Active Users: { /* change code here */ }</h1>
+        <h1>Active Users: { this.state.activeUsers  }</h1>
       </div>
     );
   }
