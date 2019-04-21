@@ -852,7 +852,7 @@ class MagicEightBall extends React.Component {
   }
 };
 
-///
+///Rendering with an If/Else Condition
 
 class MyComponent extends React.Component {
   constructor(props) {
