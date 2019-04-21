@@ -729,7 +729,7 @@ class OnlyEvens extends React.Component {
   }
 };
 
-class Controller extends React.Component {
+class Controller1 extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
