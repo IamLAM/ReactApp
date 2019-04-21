@@ -930,9 +930,10 @@ const inputStyle2 = {
 class CheckUserAge extends React.Component {
   constructor(props) {
     super(props);
-    // change code below this line
-
-    // change code above this line
+    this.state = {
+      input: '',
+      userAge: ''
+    }
     this.submit = this.submit.bind(this);
     this.handleChange = this.handleChange.bind(this);
   }
@@ -960,7 +961,7 @@ class CheckUserAge extends React.Component {
           value={this.state.input}
           onChange={this.handleChange} /><br />
         {
-          /* change code here */
+          (this.state.userAge >= 18) ? buttonTwo : (this.state.userAge== '')? buttonOne: buttonThree
         }
       </div>
     );
