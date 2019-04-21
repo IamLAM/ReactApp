@@ -2,7 +2,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import ReactDOMServer from 'react-dom/server';
 import ReactDOM from 'react-dom';
 const JSX=(<div>
 <h1>Valid JSX</h1>
@@ -1135,7 +1135,7 @@ class MyComponent11 extends React.Component {
   }
 };
 
-//
+//Renderin React on the Server with renderToString
 
 
 class App extends React.Component {
@@ -1146,3 +1146,5 @@ class App extends React.Component {
     return <div/>
   }
 };
+
+ReactDOMServer.renderToString(<App/>);
