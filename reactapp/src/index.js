@@ -543,6 +543,7 @@ class MyApp extends React.Component {
         { /* change code below this line */ }
         <GetInput input={this.state.inputValue} handleChange={this.handleChange}/>
         { /* change code above this line */ }
+        <RenderInput input={this.state.inputValue}/>
        </div>
     );
   }
