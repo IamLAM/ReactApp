@@ -1024,7 +1024,10 @@ class MyToDoList extends React.Component {
   constructor(props) {
     super(props);
     // change code below this line
-
+    this.state={
+      userInput:'',
+      toDoList:[]
+      }
     // change code above this line
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChange = this.handleChange.bind(this);
@@ -1041,7 +1044,7 @@ class MyToDoList extends React.Component {
     });
   }
   render() {
-    const items = null; // change code here
+    const items = this.state.toDoList.map(i => <li>{i}</li>);
     return (
       <div>
         <textarea
