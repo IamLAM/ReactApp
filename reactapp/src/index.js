@@ -493,7 +493,7 @@ class ControlledInput extends React.Component {
 };
 
 //ReactDOM.render(<ControlledInput/>,document.getElementById("root"));
-
+///Pass State as Props to Child Components
 class MyApp extends React.Component {
   constructor(props) {
     super(props);
@@ -519,6 +519,61 @@ class Navbar extends React.Component {
     <div>
       <h1>Hello, my name is: {this.props.name}/* your code here */ </h1>
     </div>
+    );
+  }
+};
+
+///Pass a Callback as Props
+class MyApp extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      inputValue: ''
+    }
+    this.handleChange = this.handleChange.bind(this);
+  }
+  handleChange(event) {
+    this.setState({
+      inputValue: event.target.value
+    });
+  }
+  render() {
+    return (
+       <div>
+        { /* change code below this line */ }
+
+        { /* change code above this line */ }
+       </div>
+    );
+  }
+};
+
+class GetInput extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div>
+        <h3>Get Input:</h3>
+        <input
+          value={this.props.input}
+          onChange={this.props.handleChange}/>
+      </div>
+    );
+  }
+};
+
+class RenderInput extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div>
+        <h3>Input Render:</h3>
+        <p>{this.props.input}</p>
+      </div>
     );
   }
 };
